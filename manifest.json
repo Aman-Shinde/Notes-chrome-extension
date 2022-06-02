@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Notes", 
+    "description": "Chrome extension for storing important notes/links with title and description",
+    "version": "1.0",
+    "author": "Aman Shinde",
+    "icons": { 
+        "16": "/images/logo.png",
+        "48": "/images/logo.png",
+       "128": "/images/logo.png" },
+    "browser_action": {
+        "default_icon": "/images/logo.png",
+        "default_popup": "popup.html",
+        "default_title": "Chrome Notes"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "tabs",
+        "*://*/*",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
