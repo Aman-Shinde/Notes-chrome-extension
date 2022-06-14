@@ -145,10 +145,6 @@ function loadUi() {
         notesContainer.innerHTML = '';
     }
 
-
-    var id = components.join("");
-
-    return id;
 }
 
 main()
