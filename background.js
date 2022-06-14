@@ -23,6 +23,7 @@ chrome.tabs.onActivated.addListener( tab =>     //Added a eventlistner to listen
         {  
             
             console.log(current_tab_info);
+            console.log("Hi I am Aman Shinde");
             chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             if (request.message === 'I am at foreground') {
                     console.log(request.message)
