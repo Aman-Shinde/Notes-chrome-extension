@@ -18,7 +18,6 @@ function main() {
     if (!window.localStorage.getItem('note')) {
         window.localStorage.setItem('note', JSON.stringify({ "data_cn": [{ id: '1', timeStamp: '', text: 'Hi' },] }))
     }
-
     loadUi();
 }
 
@@ -33,12 +32,10 @@ function addNewNote(new_note_text) {
 function deleteNote() {
     var notesList = getAllNotes();
     var newNotesList = notesList.data_cn.filter(noteItem => noteItem.id != this.id);
-    if(newNotesList)
-    {
+    if (newNotesList) {
         localStorage.setItem('note', JSON.stringify({ "data_cn": [...newNotesList] }));
     }
-    else
-    {
+    else {
         localStorage.setItem('note', JSON.stringify({ "data_cn": [] }));
     }
     loadUi();
@@ -72,7 +69,7 @@ function uniqueId() {
 
 function loadUi() {
     var noteList = getAllNotes();
-    if (noteList.data_cn.length > 0 ) {
+    if (noteList.data_cn.length > 0) {
         notesContainer.innerHTML = '';
         noteList.data_cn.forEach((noteItem) => {
             var newNoteHTML = `            
@@ -83,15 +80,14 @@ function loadUi() {
                 </div>
             </div>`;
 
-            notesContainer.innerHTML =  notesContainer.innerHTML + newNoteHTML ;
+            notesContainer.innerHTML = notesContainer.innerHTML + newNoteHTML;
         })
 
         notesContainer.querySelectorAll(".delete").forEach(noteListItem => {
             noteListItem.addEventListener("click", deleteNote)
         })
     }
-    else
-    {
+    else {
         notesContainer.innerHTML = '';
     }
 }
