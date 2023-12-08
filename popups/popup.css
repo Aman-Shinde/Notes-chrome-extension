@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: #ffffff;
+
+}
+
+.main-container {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.toggle {
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header h1 {
+    color: #3498db;
+}
+.searchbar {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.searchbar input {
+    border: none;
+    background-color: transparent;
+}
+.searchbar input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: auto;
+}
+
+.add-button:hover {
+    background-color: #2980b9;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+input, select, textarea {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.material-icons {
+    font-size: 20px !important;
+}
+
+.note-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.note-card-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.note-card-header .note-title {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.note-card-content {
+    padding: 5px;
+    font-size: 12px;
+
+    display: inline-block;
+    width: 88%;
+    vertical-align: top;
+}
+
+.note-card-content .note-content {
+    margin: 0;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.black-border {
+    border: 1px solid black !important;
+}
+
+.note-card-footer {
+    text-align: right;
+
+    display: inline-block;
+}
+
+.note-card-footer button {
+    border-radius: 50%;
+    padding: 4px 6px;
+    border: 1px solid black;
+    background-color: transparent;
+    margin: 6px 3px;
+
+    display: block;
+}
+
+.note-card-footer button i {
+    font-size: 12px !important;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+
+.body-dark-mode {
+    background-color: #313d44;
+}

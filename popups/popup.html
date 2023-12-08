@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Extension</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./popup.css">
+
+</head>
+<body>
+
+    <div class="main-container" id='main'>
+
+        <div class="header">
+            <h1>Chrome Notes</h1>
+            <button class='button toggle' id='toggle'>Toggle</button>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="search notes ">
+        </div>
+
+        <div class="card" id="createNoteCard">
+
+            <div class="input-group">
+                <label for="noteTitle"><i class="material-icons">title</i></label>
+                <input type="text" id="noteTitle" placeholder="Enter note title">
+            </div>
+    
+            <div class="input-group">
+                <label for="noteDescription"><i class="material-icons">description</i></label>
+                <textarea id="noteDescription" placeholder="Enter note description"></textarea>
+            </div>
+    
+            <button id="saveNoteButton" class="add-button">Add Note</button>
+        </div>
+
+        <div class="notes-container" id="notesList">
+
+            <!-- <div class="note-card">
+                <div class="note-card-header">
+                    <p class="note-title">Note Title</p>
+                </div>
+                <div class="note-card-content">
+                    <p class="note-content"> This is the content of the note. You can add your text here. This is the content of the note. You can add your text here more and more content adding just to check the text clamping feature. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, deserunt.</p>
+                </div>
+                <div class="note-card-footer">
+                    <button><i class="material-icons edit-icon">edit</i></button>
+                    <button><i class="material-icons">delete</i></button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+</body>
+<script src="./popup.js"></script>
+</html>
