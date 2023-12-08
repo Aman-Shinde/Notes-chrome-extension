@@ -1,6 +1,6 @@
 # Chrome Notes Extension
 
-![Extension Logo](path/to/your/logo.png)
+![Extension Logo](icons/icon128-light.png)
 
 ## Overview
 
@@ -28,7 +28,7 @@ The Chrome Notes Extension is a simple and intuitive extension that allows users
 
 ## Screenshots
 
-
+![Screenshot1](icons/screenshot1.png)
 
 ## Contributing
 
